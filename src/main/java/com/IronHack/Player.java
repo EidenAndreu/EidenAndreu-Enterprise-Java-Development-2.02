@@ -80,6 +80,13 @@ public class Player {
     }
 
     public void attack(Player playerB) {
+        playerB.setHealth(playerB.getHealth() - strength);
+    }
+    public void respawn(){
+        if(lives>1){
+            lives--;
+            health = MAX_HEALTH;
+        }
     }
 
 }

@@ -14,5 +14,16 @@ public class integerTDDTest extends TestCase {
         assertArrayEquals(new int[] {1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29}, oddNumbers(29));
     }
 
+    @Test
+    void test_getOddsUntil(){
+            var firstToTry = oddNumbers(10)[0];
+            assertArrayEquals(1, new int[]{firstToTry});
+    }
+
+    private void assertArrayEquals(int i, int[] ints) {
+    }
+
+    private void assertArrayEquals(int[] i, int[] ints) {
+    }
 
 }
